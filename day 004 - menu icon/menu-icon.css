@@ -1,0 +1,86 @@
+.ContentsContainer{
+  text-align:center;
+  max-width: 800px;
+  margin:0 auto auto auto;
+}
+
+.NotesContainer{
+  display:block;
+}
+
+.notesList {
+  list-style-type: none;
+}
+
+.w3solution, .mysolution{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.static1 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.animated-menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+.static div, .ani div{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: all 0.4s;
+}
+
+.ani{
+  cursor: pointer;
+}
+
+.change div:nth-child(1){
+  transform: rotate(45deg);
+  position:relative;
+  top:12px;
+}
+
+.change div:nth-child(2){
+  opacity: 0;
+}
+
+.change div:nth-child(3){
+  transform: rotate(-45deg);
+  position: relative;
+  bottom:10px;
+}

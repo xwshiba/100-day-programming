@@ -1,0 +1,103 @@
+.ContentsContainer{
+  text-align:center;
+  max-width: 800px;
+  margin:0 auto auto auto;
+}
+
+.NotesContainer{
+  display:block;
+}
+
+.notesList {
+  list-style-type: none;
+}
+
+.icon-bar-1 {
+  width: 90px; /* Set a specific width */
+  background-color: #555; /* Dark-grey background */
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.icon-bar-1 a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar-w1 a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.icon-bar-1 .active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+.icon-bar-2 {
+  width: 100%;
+  background-color: #555;
+  border-style: solid;
+  overflow: auto; /*this is highly related with float item's parent property*/
+}
+
+.icon-bar-2 a{
+  float: right; /*very important concept*/
+  text-align: center;
+  padding: 12px 0px;
+  color: white;
+  font-size: 36px;
+  transition: all 0.3 ease;
+  width: 20%;
+}
+
+.icon-bar-2 a:hover{
+  background-color: #000;
+}
+
+.icon-bar-2 .active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+.renook{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.icon-bar-3 {
+  width: 50%;
+  border-top-style: solid;
+  border-top-color: #F3F1FF;
+  display: flex;
+  align-items: center;
+}
+
+
+.icon-bar-3 a{
+  width: 25%;
+  font-size: 50px;
+  color: #B3B3B3;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-bar-3 .active {
+  color: #FF895D;
+}
+
+.icon-bar-3 a:hover{
+  background-color: #FF895D;
+  color: white;
+}
+
+.folder:hover .folder-close,
+.folder .folder-open {
+  display: none;
+}
+.folder:hover .folder-open {
+  display: inline-block;
+}
+
