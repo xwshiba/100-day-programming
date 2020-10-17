@@ -23,5 +23,15 @@ class DeckTests(unittest.TestCase):
 		self.assertTrue(isinstance(self.deck.cards, list))
 		self.assertEqual(len(self.deck.cards), 52)
 
+	def test_repr(self):
+		"""deck repr should match"""
+		self.assertEqual(repr(self.deck), "Deck of 52 cards")
+
+	def test_count(self):
+		"""deck count should work"""
+		self.assertEqual(self.deck.count(), 52)
+		self.deck.cards.pop()
+		self.assertEqual(self.deck.count(), 51)
+
 if __name__ =="__main__":
 	unittest.main()
