@@ -4,9 +4,9 @@ import concurrent.futures
 import requests
 import matplotlib.pyplot as plt
 
-RECEIPT_NUMBER_BASE = "MCT20630"
-RANGE_START = 64056
-RANGE_END = 65056
+RECEIPT_NUMBER_BASE = "MCT2052"
+RANGE_START = 595222
+RANGE_END = 595822
 CASE_TYPE = 'I-539'
 CONCURRENCY_LEVEL = 11
 
@@ -20,9 +20,9 @@ def check_status(receipt_num):
         return None
     
     response = r.text.split("\n")
-    if CASE_TYPE in response[733]:
-        #print(receipt_num, response[719].strip())
-        return (receipt_num, response[719].strip())
+    
+    if CASE_TYPE in response[735]:
+        return (receipt_num, response[721].strip())
     else:
         return None
 
@@ -46,7 +46,7 @@ async def main():
         if i % 10 == 0:
             seconds = time.time() - start
             print(" - processing batch No.{0}, the job has took {1:.2f} seconds.".format(i, seconds))
-            print(" - Has found I-539: {}".format(len(status_list)))
+            print(" - Has found I-765: {}".format(len(status_list)))
         batch_start = RANGE_START + CONCURRENCY_LEVEL * i
         with concurrent.futures.ThreadPoolExecutor(max_workers=CONCURRENCY_LEVEL) as executor:
             loop = asyncio.get_event_loop()
