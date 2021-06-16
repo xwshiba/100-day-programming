@@ -1,0 +1,2 @@
+1. set a threshold for the color so that when the background is too dark, change the text color to white;
+2. make it look nicer - button styles, h1 styles, etc..
