@@ -1,0 +1,9 @@
+The Web Development Bootcamp Class 269 Comments - A bunch of ways to improve the game:
+
+1. opponents could be multiple, and iterate over everyone else.
+2. a win by two feature - the tie break feature - reference: https://codepen.io/antonis_vlachos/pen/WNGZzML
+3. fireworks when somebody wins
+
+4. track the games and have a best of three in the records
+5. allow players to enter their names
+6. keyboard access
